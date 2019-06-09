@@ -1,0 +1,367 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="home1.css">
+</head>
+<body>
+<header>
+    <div class="topnav">
+       <h1><a href="index.php">BUZZ</a></h1>
+	       <div class="topnav-right">
+		   
+		       <a href="home.html">Home</a>
+			   <a href="#about">All Quizzes</a>
+			   <a href="#blogs">Blogs</a>
+			   <a href="#signup" onclick="openForm1()">Create Account</a>
+			   <a href="#login" onclick="openForm()">Login</a>
+			    <div class="dropdown">
+                   <button class="dropbtn" onclick="myFunction()">More
+                   <i class="fa fa-caret-down"></i>
+                   </button>
+			           <div class="dropdown-content" id="myDropdown">
+                         <a href="#">About</a>
+                         <a href="#">Contact</a>
+                        
+                       </div>
+				  </div> 
+			</div>   
+	</div>
+</header>
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    
+    <img src="web1.jpg" style="width:100%">
+    <div class="text">Entertainment</div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="web2.jpg" style="width:100%">
+    <!--<div class="text">Caption Two</div>-->
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="web3.jpg" style="width:100%">
+    <div class="text">Music</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="web4.jpg" style="width:100%">
+    <!--<div class="text">Caption Three</div>-->
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="web5.jpg" style="width:100%">
+    <div class="text">Sports</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="ab">MOST POPULAR QUIZ TOPICS</div>
+<div class="row">
+<div class="column">
+<svg height="170" width="300" <!--style="margin-left:200px;"--> >
+<defs>
+    <pattern id="image1" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 700 700">
+      <image x="0%" y="0%" width="700" height="845" xlink:href="web7.jpg"></image>
+    </pattern>
+  </defs>
+  <circle cx="100" cy="100" r="70"  fill="url(#image1)" />
+  <!--<text x="100" y="110" 
+          text-anchor="middle"
+          stroke="white"
+          stroke-width="2px"
+		  style="font-size:30px;"
+          > MOVIES
+    </text>-->
+</svg>
+<svg height="170" width="300">
+<defs>
+    <pattern id="image2" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 700 700">
+      <image x="0%" y="0%" width="1230" height="1080" xlink:href="web8.jpg"></image>
+    </pattern>
+  </defs>
+  <circle cx="100" cy="100" r="70"  fill="url(#image2)" />
+  <!--<text x="100" y="110" 
+          text-anchor="middle"
+          stroke="white"
+          stroke-width="2px"
+		  style="font-size:30px;"
+          > SERIES
+    </text>--> 
+</svg>
+
+</div>
+  
+  <div class="column">
+  <img src="web14.jpg" style="height:250px;width:97%;">
+  <br><br>
+  <button style="margin-left:100px;" class="button1">MOVIES</button>
+  </div>
+  <div class="column">
+  <img src="web15.jpg" style="height:250px; width:99%;">
+  <br><br>
+  <button style="margin-left:90px;" class="button1">SERIES</button>
+  </div>
+  <div class="column">
+  <img src="web16.jpg" style="height:250px;width:97%;">
+  <br><br>
+  <button style="margin-left:100px;" class="button1">MUSIC</button>
+  </div>
+  <div class="column">
+ <img src="web17.jpg" style="height:250px; width:100%;">
+ <br><br>
+  <button style="margin-left:100px;" class="button1">SPORTS</button>
+  </div>
+  <div class="column" >
+
+
+<svg height="170" width="300" <!--style="margin-left:200px;"-->>
+<defs>
+    <pattern id="image4" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 700 700">
+      <image x="0%" y="0%" width="1700" height="1130" xlink:href="web10.jpg"></image>
+    </pattern>
+  </defs>
+  <circle cx="100" cy="100" r="70"  fill="url(#image4)" />
+  <!--<text x="100" y="110" 
+          text-anchor="middle"
+          stroke="white"
+          stroke-width="2px"
+		  style="font-size:30px;"
+          > FOOD
+    </text>-->
+</svg>
+<svg height="170" width="300">
+<defs>
+    <pattern id="image5" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 700 700">
+      <image x="0%" y="0%" width="1620" height="845" xlink:href="web11.jpg"></image>
+    </pattern>
+  </defs>
+  <circle cx="100" cy="100" r="70"  fill="url(#image5)" />
+  <!--<text x="100" y="110" 
+          text-anchor="middle"
+          stroke="white"
+          stroke-width="2px"
+		  style="font-size:30px;"
+          > TRAVEL
+    </text>--> 
+</svg>
+
+</div>
+</div>
+<div class="row">
+<div class="ab">MOST POPULAR BLOGS</div>
+<div class="column">
+<svg height="170" width="300">
+
+<defs>
+    <pattern id="image" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 700 700">
+      <image x="0%" y="0%" width="1240" height="835" xlink:href="web6.jpg"></image>
+    </pattern>
+  </defs>
+    
+  <circle cx="100" cy="100" r="70" fill="url(#image)" />
+  <!--<text x="100" y="110" 
+          text-anchor="middle"
+          stroke="white"
+          stroke-width="2px";
+		  style="font-size:30px;"
+          > MUSIC
+    </text>-->
+</svg>
+<svg height="170" width="300">
+<defs>
+    <pattern id="image3" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 700 700">
+      <image x="0%" y="0%" width="1620" height="820" xlink:href="web9.jpg"></image>
+    </pattern>
+  </defs>
+  <circle cx="100" cy="100" r="70"  fill="url(#image3)" />
+  <!--<text x="100" y="110" 
+          text-anchor="middle"
+          stroke="white"
+          stroke-width="2px"
+		  style="font-size:30px;"
+          > SPORTS
+    </text>-->
+</svg>
+</div>
+<div class="column">
+<img src="web18.jpg" style="height:250px;width:97%;">
+  <br>
+  <br>
+  <button style="margin-left:100px;" class="button1">FOOD</button>
+  </div>
+  <div class="column">
+  <img src="web19.jpg" style="height:250px;width:97%;">
+  <br><br>
+  <button style="margin-left:100px;" class="button1">TRAVEL</button>
+  </div>
+  <div class="column">
+  <img src="web20.jpg" style="height:250px;width:97%;">
+  <br><br>
+  <button style="margin-left:100px;" class="button1">BOOKS</button>
+  </div>
+  <div class="column">
+ <img src="web21.jpg" style="height:250px; width:100%;">
+ <br><br>
+  <button style="margin-left:100px;" class="button1">HISTORY</button>
+  </div>
+  <div class="column">
+  <svg height="170" width="300">
+<defs>
+    <pattern id="image6" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 700 700">
+      <image x="0%" y="0%" width="1620" height="930" xlink:href="web12.jpg"></image>
+    </pattern>
+  </defs>
+  <circle cx="100" cy="100" r="70"  fill="url(#image6)" />
+  <!--<text x="100" y="110" 
+          text-anchor="middle"
+          stroke="white"
+          stroke-width="2px"
+		  style="font-size:30px;"
+          > BOOKS
+    </text>--> 
+</svg>
+<svg height="170" width="300">
+<defs>
+    <pattern id="image7" x="0%" y="0%" height="100%" width="100%"
+             viewBox="0 0 700 700">
+      <image x="0%" y="0%" width="1620" height="970" xlink:href="web13.jpg"></image>
+    </pattern>
+  </defs>
+  <circle cx="100" cy="100" r="70"  fill="url(#image7)" />
+  <!--<text x="100" y="110" 
+          text-anchor="middle"
+          stroke="white"
+          stroke-width="2px"
+		  style="font-size:30px;"
+          > HISTORY
+    </text>-->
+</svg>
+</div>
+</div>
+  <br><br><br>
+  <div class="form-popup" id="myForm">
+  <form class="form-container" method="POST">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" name="login" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+//Window.blur();
+  //document.getElementById('modalbackground').style.display='block';
+  //document.getElementById('myText').blur();
+  document.getElementById("myForm").style.display = "block";
+  }
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+   
+   <div class="form-popup" id="myForm1">
+    <form class="form-container" method="POST">
+    <h1>Signup</h1>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="name"><b>User Name</b></label>
+    <input type="text" placeholder="Enter User Name" name="name" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	<label for="rpsw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Enter Password" name="rpsw" required>
+
+    <button type="submit" name="signup" class="btn">Signup</button>
+	<button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  </form>
+  </div>
+  <script>
+  function openForm1() {
+//Window.blur();
+  //document.getElementById('modalbackground').style.display='block';
+  //document.getElementById('myText').blur();
+  document.getElementById("myForm1").style.display = "block";
+  }
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+</script>
+
+
+<footer>
+<div class="lnav">Copyright H Brothers Inc, 2008-2019<br>
+Privacy Policy | Popular Categories | Most-Taken User Quizzes | Links | Tools<br>
+Interesting Facts | Interesting Quotes
+</div>
+
+</body>
+</html>
+
+
