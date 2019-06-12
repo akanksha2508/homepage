@@ -1,0 +1,198 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="hm.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+<body>
+<header>
+    <div class="topnav" id="nav">
+       <h1><a href="#">PARIS</a></h1>
+	       <div class="topnav-right">
+		   
+		       <a href="hm.html">Home</a>
+			   <a href="academic.html">About</a>
+			   <a href="personal.html">Sign Up</a>
+			   <a href="gallary.html">Sign In</a>
+			   </div>
+			</div>
+</header>
+<div style="background-image: url(https://en.parisinfo.com/var/otcp/sites/images/visiteurs/15924582-72-fre-FR/visiteurs.jpg); height:300px;">
+                    <h1 style="text-align:center;margin-top:0px; vertical-align:center;text-shadow: 2px 2px 5px ;color:white;font-size:50px;">
+                        Welcome to Paris!
+                    </h1>
+                
+        </div>
+<br><br>
+<div class="slideshow-container" style="margin-top:-70;">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    
+    <img src="8.jpg" style="width:60%">
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="9.jpg" style="width:60%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="10.jpg" style="width:60%">
+    
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="13.jpg" style="width:60%">
+    
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="12.jpg" style="width:60%">
+    
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>   
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); // Change image every 1 seconds
+}
+</script>
+
+<div class="row">
+  <div class="column3" style="margin-left:-100px;">
+      <div class="card">
+          <div class="card-header" style="font-family:Comic Sans MS, cursive, sans-serif; font-size:25px;">Eiffel Tower</div>
+             <div class="card-body">
+			    <img src="14.jpg" class="card-img-top" style="width:100%; height:150px;"><br>
+			    The Eiffel Tower, one of the must sees in Paris, can't be missed from any spot while walking around in the city. 
+                It was built by the French engineer Gustave Eiffel 
+                which was already famous at the time for building bridges. He spent several years building the Eiffel Tower as a monument for the World Exhibition in 1889.
+            </div> 
+		 
+          <div class="card-header" style="font-family:Comic Sans MS, cursive, sans-serif; font-size:25px;">Notre Dame</div>
+             <div class="card-body">
+			 <img src="15.jpg" class="card-img-top" style="width:100%; height:150px;"><br>
+			 On Monday, April 15, 2019, the Notre-Dame Cathedral in Paris was ravaged by a fire. Archbishop Michel Aupetit of Paris:
+			 "Our Lady, our dear cathedral, witness of so many major events in our country, 
+			 was destroyed by a frightful fire after so long resisted the vicissitudes of its history
+             </div>
+		  
+          <div class="card-header" style="font-family:Comic Sans MS, cursive, sans-serif; font-size:25px;">Louvre Museum</div>
+             <div class="card-body">
+			 <img src="16.jpg" class="card-img-top" style="width:100%; height:150px;"><br>
+			 At the top of Paris top 10 attractions, The Louvre Museum (Paris) is in fact the largest art museum in the world and the home for one of the 
+			 finest art collections anywhere to be seen including two of the most famous painted woman - 
+			 the Mona Lisa and Venus de Milo just to name two out of the 30,000 exhibits displayed.
+          </div>
+	   </div>
+	
+	<a href="#nav" class="btn-primary" style="border-radius:2px;">GO BACK</a>
+    	
+   </div>
+    <div class="column4" style="margin-left:100px;">
+	<b><i>Paris, the cosmopolitan capital of France, is one Europe's largest cities, with 2.2 million people living in the dense, 
+	central city and almost 12 million people living in the whole metropolitan area. Located in the north of France on the river Seine, 
+	Paris has the well deserved reputation of being the most beautiful and romantic of all cities, brimming with historic associations and 
+	remaining vastly influential in the realms of culture, art, fashion, food and design. Dubbed the City of Light (la Ville Lumière) and
+	Capital of Fashion, it is home to the world's finest and most luxurious fashion designers and cosmetics, such as Louis Vuitton, Chanel, 
+	Dior, Yves Saint-Laurent, Guerlain, Lancôme, L'Oréal, Clarins, etc. A large part of the city, including the River Seine, is a UNESCO World 
+	Heritage Site. The city has the second highest number of Michelin restaurants in the world (after Tokyo) and contains numerous iconic landmarks, 
+	such as the world's most visited tourist site the Eiffel Tower, the Arc de Triomphe, the Notre-Dame Cathedral, the Louvre Museum, Moulin Rouge, 
+	and Lido, making it the most popular tourist destination in the world with 45 million tourists annually.</i></b><br>
+	<h2 style="text-align:center">TOP ATTRACTIONS</h2>
+	<div class="card">
+	     <div class="card-header" style="font-family:Comic Sans MS, cursive, sans-serif; font-size:25px;">Sainte Chapelle</div>
+	        <div class="card-body">
+	          <img src="17.jpg" class="card-img-top" style="width:50%; height:150px;"><br>
+	          The Holy Chapel (Paris) in French - La Sainte Chapelle, was built by King Louis IX to host the remains of the True Cross, 
+		      including the original Crown of Thorns which was purchased from the emperor of Constantinople. Today the Holy Chapel Paris is
+		      considered among the highest achievements of the Rayonnant period of Gothic architecture and is the only surviving building of 
+		      the Capetian Royal Palace on the Île de la Cité .
+	       </div>
+	   
+	   
+	      <div class="card-header" style="font-family:Comic Sans MS, cursive, sans-serif; font-size:25px;">Arc de Triomphe</div>
+	        <div class="card-body">
+	          <img src="18.jpg" class="card-img-top" style="width:50%; height:150px;"><br>
+	          One of the most popular attractions in Paris, Inspired by Rome's Arch of Titus, the Arc de Triomphe is located in Paris in the world’s 
+	          largest traffic roundabout and is the biggest and tallest triumphal arch in the world - about 49 meters (161 ft.) high and 44 meters (144 ft.) wide. 
+	          Arc de Triomphe (Paris) is located 2 kilometers northwest from the place de
+	         la Concorde in the middle of the well know and extremely busy "Place Charles de Gaulle" (or better known to Parisians as “Place de l’Étoile”).
+	       </div>
+	  
+	       <div class="card-header" style="font-family:Comic Sans MS, cursive, sans-serif; font-size:25px;">Tuileries Gardens</div>
+	         <div class="card-body">
+	          <img src="19.jpg" class="card-img-top" style="width:50%; height:150px;"><br>
+	          The spectacular Tuileries Gardens (Paris), Jardin des Tuileries can be found just between the Louvre and the Place de la Concorde. 
+	           It was designed in 1564 by Catherine de Medicis as a garden for the Tuileries Palace (for Louis XIV).
+	           The Tuileries Gardens are probably the most French garden you could find all across Paris, with fine rows of trees and well-formed paths.
+	         </div>
+	   
+	         <div class="card-header" style="font-family:Comic Sans MS, cursive, sans-serif; font-size:25px;">River Cruise</div>
+	           <div class="card-body">
+	            <img src="20.jpg" class="card-img-top" style="width:50%; height:150px;"><br>
+	            Cruise up the majestic Seine and see how Paris famous sites are revealed from a new perspective. This cruise comes for free with the Paris Pass.
+	            From the water it is possible to see the bridges and monuments of Paris as you could never hope to from land. 
+	          </div>
+	     </div>
+	   																																																																			
+	   <a href="#nav" class="btn-primary" style="border-radius:2px;">GO BACK</a>
+	  
+	</div>
+</div>
+ 
+ <br><br>
+ <footer style="width:100%;">
+<div class="lnav" style="width:100%;">Copyright H Brothers Inc, 2008-2019<br>
+Privacy Policy | Popular Categories | Most-Taken User Quizzes | Links | Tools<br>
+Interesting Facts | Interesting Quotes
+</div>
+</footer>
+</body>
+</html>
