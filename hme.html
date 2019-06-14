@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="cal.css">
+<style>
+body {
+  background-image: url("30.jpg");
+  background-repeat: repeat;
+  background-color: #cccccc;
+  
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="openForm()" class="btn btn-primary btn-lg" style="margin-left:500px; width:100px;margin-top:250px;">AGE</button>
+<a href="cal.html" class="btn btn-primary btn-lg" style="margin-left:140px; width:250px;margin-top:250px;">CALCULATOR</a>
+
+<script>
+function openForm() {
+
+  document.getElementById("myForm").style.display = "block";
+  }
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<div class="form-popup" id="myForm" name="myform" >
+  <form class="form-container" method="POST" >
+    <h1>Login</h1>
+
+    <label for="text"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" id="name" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" required>
+
+    <button type="submit" name="login" class="btn" onclick="validateform()">OPEN</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>  
+function validateform(){  
+var name = document.getElementById("name").value;
+var password = document.getElementById("psw").value;
+
+  
+if ((name=="Akanksha" || name=="Jaya"||name=="Kalpana" ||name=="Neeraj" ||name=="akanksha" ||name=="kalpana" ||name=="jaya" ||name=="neeraj" )&&( password=="123456") ){  
+  alert ("Login successfully");
+window.location.href="clock.html";// Redirecting to other page.
+return false;  
+   
+}else {
+  alert("Password or name is incorrect.");  
+   return false;
+  }  
+}  
+</script>
+</body>
+</html>
