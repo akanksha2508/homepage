@@ -1,0 +1,111 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="quiz.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+</head>
+<body>
+<header>
+<div class="topnav">
+<a href="#">QUIZ</a>
+</div>
+</header>
+
+<form  action="quiz.php" method="post">
+<div class="container">
+  <div class="card-body">
+  FIRST NAME
+  <input type="text" name="fname" required>
+  <span style="margin-left:200px;">LAST NAME
+  <input type="text" name="lname" required></span>
+  </div>
+
+  <div class="card-header">1. What does PHP stand for?</div>
+  <div class="card-body">
+  <input type="radio" name="1"  value="a">a) PHP: Hypertext Preprocessor<br>
+  <input type="radio" name="1"  value"b">b) Personal Hypertext Processor<br>
+  <input type="radio" name="1"  value="c">c) Private Home Page<br>
+  <input type="radio" name="1"  value="d">d) Personal Home Page<br>
+  </div>
+  
+  <div class="card-header">2. How do you write "Hello World" in PHP</div>
+  <div class="card-body">
+  <input type="radio" name="2" value="a">a) "Hello World";<br>
+  <input type="radio" name="2" value="b">b) Document.Write("Hello World");<br>
+  <input type="radio" name="2" value="c">c) echo "Hello World";<br>
+  </div>
+  
+  <div class="card-header">3. All variables in PHP start with which symbol?</div>
+  <div class="card-body">
+  <input type="radio" name="3" value="a">a) $<br>
+  <input type="radio" name="3" value="b">b) @<br>
+  <input type="radio" name="3" value="c">c) %<br>
+  <input type="radio" name="3" value="d">d) &<br>
+  </div>
+  
+  <div class="card-header">4. What is the correct way to add 1 to the $count variable?</div>
+  <div class="card-body">
+  <input type="radio" name="4" value="a">a) $count++;<br>
+  <input type="radio" name="4" value="b">b) $count =+1<br>
+  <input type="radio" name="4" value="c">c) ++count<br>
+  <input type="radio" name="4" value="d">d) count++;<br>
+  </div>
+  
+  <div class="card-header">5. How do you get information from a form that is submitted using the "post" method?</div>
+  <div class="card-body">
+  <input type="radio" name="5" value="a">a) Request.Form;<br>
+  <input type="radio" name="5" value="b">b) $_GET[ ];<br>
+  <input type="radio" name="5" value="c">c) $_POST[ ];<br>
+  <input type="radio" name="5" value="d">d) Request.QueryString;<br>
+  </div>
+  
+  <div class="card-header">6. When using the POST method, variables are displayed in the URL:</div>
+  <div class="card-body">
+  <input type="radio" name="6" value="a">a) True<br>
+  <input type="radio" name="6" value="b">b) False<br>
+  </div>
+  
+  <div class="card-header">7. In PHP you can use both single quotes (' ') and double quotes (" ") for strings:</div>
+  <div class="card-body">
+  <input type="radio" name="7" value="a">a) True<br>
+  <input type="radio" name="7" value="b">b) False<br>
+  </div>
+  
+  <div class="card-header">8. What is the correct way to create a function in PHP?</div>
+  <div class="card-body">
+  <input type="radio" name="8" value="a">a) create myFunction()<br>
+  <input type="radio" name="8" value="b">b) new_function myFunction()<br>
+  <input type="radio" name="8" value="c">c) function myFunction()<br>
+  </div>
+  
+  <div class="card-header">9. What is the correct way to connect to a MySQL database?</div>
+  <div class="card-body">
+  <input type="radio" name="9" value="a">a) mysql_connect("localhost");<br>
+  <input type="radio" name="9" value="b">b) mysql_query("localhost");<br>
+  <input type="radio" name="9" value="c">c) connect_mysql("localhost");<br>
+  <input type="radio" name="9" value="d">d) mysql_open("localhost");<br>
+  </div>
+  
+  <div class="card-header">10.The following HTML code will direct form information and control to what file?<br>
+  < form action="P4.php" method="post" ></div>
+  <div class="card-body">
+  <input type="text" name="10" required>
+  </div>
+  
+  <button class="btn btn-primary" type="submit" style="margin-left:600px;" name="submit">SUBMIT</button>
+  </div>
+  </form>
+  </body>
+</html>
